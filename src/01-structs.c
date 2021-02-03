@@ -24,21 +24,6 @@ typedef struct employee {
    enum meal_option *meals;
 } employee_t;
 
-/* Für Aufgabe 03 - Dynamic Memory */
-void determine_meals(employee_t *employee, int number_of_meals) {
-   if (employee->meals) {
-      free(employee->meals);
-   }
-
-   enum meal_option *chosen_meals = calloc(number_of_meals, sizeof(enum meal_option));
-
-   for (int i = 0; i < number_of_meals; i++) {
-      chosen_meals[i] = rand() % MAX_MEALS;
-   }
-
-   employee->meals = chosen_meals;
-}
-
 date_t today() {
    date_t date = { .day = 21, .month = 1, .year = 2021 };
    return date;
