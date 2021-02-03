@@ -15,14 +15,6 @@ typedef struct {
 /* Für Aufgabe 03 - Dynamic Memory */
 enum meal_option {
    PIZZA,
-   BURGERS,
-   CHICKPEA_CURRY,
-   LASAGNA,
-   RATATOUILLE,
-   SALAD,
-   FALAFEL,
-   PUMPKIN_SOUP,
-   MAX_MEALS,
 };
 
 typedef struct employee {
